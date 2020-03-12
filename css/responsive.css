@@ -1,0 +1,142 @@
+.sp, .sp320, .sp375, .sp425, .sp475 {
+  display: none;
+}
+.pc, .pc320, .pc375, .pc425, .pc475 {
+  display: block;
+}
+/**************** Css is specific to each browser *****************/
+@media screen and (max-width: 1200px) {
+  #wrapper {
+    padding: 0 3%;
+  }
+  #main {
+    margin: 3% auto;
+  }
+}
+@media screen and (max-width: 768px) {
+h1, h2, h3, h4, h5, h6, input, button, textarea, select, p, blockquote, th, td, pre, address, li, dt, dd {
+	font-size: 140%;
+}
+#wrapper {
+	min-width: 100%;
+}
+#main {
+  padding: 5px 5px 30px;
+  border-radius: 15px;
+}
+.container {
+	width: 100%;
+	padding: 0 4%;
+}
+.sp {
+	display: block;
+}
+.pc {
+	display: none;
+}
+#totop {
+  bottom: 50px;
+  right: 3%;
+  width: 40px;
+}
+section:not(:last-child) {
+  margin-bottom: 30px;
+}
+/****************** Mainvisual *****************/
+#mainvisual {
+	height: auto;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+}
+#mainvisual h2 {
+	font-size: 4vw;
+}
+.main-img {
+  height: 24vw;
+  width: 24vw;
+}
+.main-des {
+  max-width: calc(100% - 28vw);
+}
+h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.idx-tlt {
+  font-size: 14px;
+}
+.idx-tlt span {
+  font-size: 12px;
+}
+.idx-list li {
+  padding-left: 15px;
+}
+.idx-list li::before {
+  top: 12px;
+}
+.idx-project li {
+  max-width: 48%;
+}
+.idx-list li:nth-child(n + 2) {
+  margin-top: 10px;
+}
+.idx-project li:nth-child(n + 3), .idx-project li:nth-child(n + 4) {
+  margin-top: 20px;
+}
+.idx-project span {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+}
+@media only screen and (max-width: 640px) {
+  #mainvisual h2 {
+    font-size: 5vw;
+  }
+  .main-list li {
+    padding-left: 20px;
+    background-size: 15px !important;
+    background-position: top 5px left;
+  }
+  .main-list li:nth-child(2) {
+    background-position: top 6px left;
+  }
+  .main-list li:nth-child(3) {
+    background-position: top 7px left;
+  }
+  .main-content {
+    display: block;
+  }
+  .main-img {
+    height: 30vw;
+    width: 30vw;
+    margin: 0 auto 30px;
+  }
+  .main-des {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 475px) {
+  .main-img {
+    height: 45vw;
+    width: 45vw;
+    margin: 0 auto 20px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .sp375 {
+    display: block;
+  }
+  .pc375 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .sp320 {
+    display: block;
+  }
+  .pc320 {
+    display: none;
+  }
+}
