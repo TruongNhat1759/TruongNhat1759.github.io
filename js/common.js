@@ -34,7 +34,7 @@ $(function() {
 			$('a[href^="#"]').click(function() {
                 if ($($(this).attr('href')).length) {
                     var p = $($(this).attr('href')).offset();
-                    $('html,body').animate({ scrollTop: p.top - 40 }, 400);
+                    $('html,body').animate({ scrollTop: p.top - 120 }, 400);
                 }
                 return false;
             });

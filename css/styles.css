@@ -89,10 +89,10 @@ body.loaded::before {
 	min-width: 1200px;
 	overflow: hidden;
 	margin: 0 auto;
+	position: relative;
 	background: url('../images/idx_bg.jpg') center no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	position: relative;
 }
 #particles-js {
 	position: absolute;
