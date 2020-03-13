@@ -74,15 +74,16 @@ body::before {
 	height: 100%;
 	top: 0;
 	left: 0;
-	z-index: 2000;
 	opacity: 0;
 	transition: all 0.4s ease;
+	z-index: -1;
 }
 body.loaded {
 	overflow: hidden;
 }
 body.loaded::before {
 	opacity: 1;
+	z-index: 2000;
 }
 #wrapper{
 	min-width: 1200px;
