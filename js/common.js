@@ -4,7 +4,6 @@ $(function() {
   	var obj= {
 	  	init: function(){
 		    this.toTop();
-			// this.smoothScroll();
 			this.topJS();
 	  	},
 	  	toTop: function(){
@@ -30,18 +29,10 @@ $(function() {
 			});
 			
 	  	},
-	  	smoothScroll : function(){
-			$('a[href^="#"]').click(function() {
-                if ($($(this).attr('href')).length) {
-                    var p = $($(this).attr('href')).offset();
-                    $('html,body').animate({ scrollTop: p.top - 40 }, 400);
-                }
-                return false;
-            });
-		},
 	  	topJS : function(){
 	  		$(window).bind('load', function() {
 	  			new WOW().init();
+	  			$('#wrapper').parallax({imageSrc: 'images/idx_bg.jpg'});
 	  		});
 	  		$(window).bind('load resize scroll', function() {
 	  			var vS = $(this).scrollTop(),
