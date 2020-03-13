@@ -70,6 +70,7 @@ body {
 	margin: 0 auto;
 	background: url('../images/idx_bg.jpg') center no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 	position: relative;
 }
 #particles-js {
