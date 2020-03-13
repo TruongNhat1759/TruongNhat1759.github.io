@@ -32,7 +32,7 @@ $(function() {
 	  	topJS : function(){
 	  		$(window).bind('load', function() {
 	  			new WOW().init();
-	  			$('#wrapper').parallax({imageSrc: 'images/idx_bg.jpg'});
+	  			// $('#wrapper').parallax({imageSrc: 'images/idx_bg.jpg'});
 	  		});
 	  		$(window).bind('load resize scroll', function() {
 	  			var vS = $(this).scrollTop(),
