@@ -3,7 +3,6 @@
 @import "fonts.css";
 @import "normalize.css";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
-
 * {
 	padding: 0;
 	margin: 0;
@@ -50,7 +49,7 @@ img {
   position: fixed;
   bottom: 60px;
   right: 60px;
-  z-index: 10;
+  z-index: 1000;
   width: 60px;
   margin: 0;
 }
@@ -63,34 +62,32 @@ img {
 /****************** Container *****************/
 body {
 	font-family: 'Montserrat', sans-serif;
-	color: #151935;
+	color: #fff;
 }
 #wrapper{
 	min-width: 1200px;
 	overflow: hidden;
 	margin: 0 auto;
-	background: #1fcbcb;
+	background: url('../images/idx_bg.jpg') center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 	position: relative;
-	z-index: 1;
 }
-#particles-js, #mainvisual-js {
+#particles-js {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
-	z-index: -1;
 }
 #main {
 	max-width: 1200px;
 	width: 100%;
-	background: #fafafa;
 	margin: 50px auto;
 	padding: 40px 30px;
-	box-shadow: 0 0 30px rgba(0,0,0,0.2);
+	box-shadow: 0 0 30px rgba(0,0,0,0.4);
 	border-radius: 20px;
-	position: relative;
-	z-index: 1;
+	border: 1px solid #fff;
 }
 .container {
 	max-width: 1100px;
@@ -98,14 +95,53 @@ body {
 	margin: 0 auto;
 }
 /****************** Header *****************/
+#gnavi {
+	transition: all 0.2s ease;
+	padding: 20px 0;
+}
+#gnavi.fixed {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #ffa500;
+	z-index: 1000;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+#gnavi ul {
+	max-width: 1100px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+#gnavi li {
+	max-width: 18%;
+	width: 100%;
+}
+#gnavi a {
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	border: 1px solid #fff;
+	border-radius: 30px;
+	padding: 4px;
+	transition: all 0.2s ease;
+}
+#gnavi a:hover {
+	background: #fff;
+	color: #151935;
+}
 /****************** Mainvisual *****************/
 #mainvisual {
 	position: relative;
 	z-index: 1;
-	background: #ffa500;
 	border-radius: 20px;
 	padding: 40px;
-	margin-bottom: 60px;
+	margin-bottom: 20px;
 }
 .main-content {
 	display: flex;
@@ -247,7 +283,6 @@ h3 {
 	text-transform: uppercase;
 	font-weight: 700;
 	text-align: center;
-	color: #ffa500;
 	font-size: 14px;
 	margin-top: 15px;
 	letter-spacing: 0.04em;
@@ -262,14 +297,13 @@ h3 {
 	font-weight: 400;
 	font-size: 14px;
 }
+.f-call {
+  display: none;
+}
 /****************** Footer *****************/
 .copyright {
 	font-size: 12px;
 	text-align: center;
-	padding: 10px 0;
-	margin: 0;
-	background: #333;
-	color: #fff;
 }
 section:not(:last-child) {
 	margin-bottom: 60px;
