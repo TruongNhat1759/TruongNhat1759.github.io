@@ -68,6 +68,8 @@ body {
 	min-width: 1200px;
 	overflow: hidden;
 	margin: 0 auto;
+	/*background: url('../images/idx_bg.jpg') center no-repeat;*/
+	background-size: cover;
 	position: relative;
 }
 #particles-js {
