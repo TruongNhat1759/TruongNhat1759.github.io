@@ -42,6 +42,7 @@ $(function() {
 	  	topJS : function(){
 	  		$(window).bind('load', function() {
 	  			new WOW().init();
+	  			$('body').removeClass('loaded');
 	  		});
 	  		$(window).bind('load resize scroll', function() {
 	  			var vS = $(this).scrollTop(),
