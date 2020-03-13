@@ -114,13 +114,13 @@ h3 {
 }
 .f-call li:last-child a {
     background: #151935 url('../images/ico_mail.png') top 5px center no-repeat;
-    background-size: 21px;
+    background-size: 20px;
 }
 .f-call li a {
   height: 100%;
   display: flex;
   background: #ffa500 url('../images/ico_tel.png') top 5px center no-repeat;
-  background-size: 21px;
+  background-size: 20px;
   align-items: center;
   justify-content: center;
   color: #fff;
