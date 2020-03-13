@@ -6,7 +6,7 @@ particlesJS("particles-js", {
       "value": 100,
       "density": {
         "enable": true,
-        "value_area":1500
+        "value_area":1000
       }
     },
     "color": {
@@ -29,7 +29,7 @@ particlesJS("particles-js", {
       }
     },
     "opacity": {
-      "value": 0.8,
+      "value": 0.6,
       "random": false,
       "anim": {
         "enable": false,
