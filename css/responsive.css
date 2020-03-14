@@ -166,3 +166,10 @@ h3 {
     margin: 0 auto 20px;
   }
 }
+@media not all and (min-resolution:0.001dpcm) {
+  @media {
+    .idx-list li::before {
+      top: 14px;
+    }
+  }
+}
