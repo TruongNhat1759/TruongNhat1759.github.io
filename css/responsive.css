@@ -133,6 +133,9 @@ h3 {
 
 }
 @media only screen and (max-width: 640px) {
+  #wrapper {
+    padding: 0 3% 47px;
+  }
   #mainvisual h2 {
     font-size: 5vw;
   }
